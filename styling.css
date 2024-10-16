@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d0cfcf;
+    padding: 20px;
+}
+
+.liste {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+
+}
+.liste2 h2{
+text-align: left;
+
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #DFD7BC;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.knappen {
+    border-radius: 0.3125rem;
+background: #83AD48;
+color: black;
+padding: 0.50rem 2.25rem;
+
+}
+
+.new-task {
+    display: grid;
+    grid-template-columns: 3fr 1fr auto;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    border-radius: 0.3125rem;
+border: 1px solid #84AC48;
+background: #F5F5F5;
+flex: 1;
+
+    font-size: 16px;
+    margin-right: 10px;
+
+}
+input[type="number"] {
+    border-radius: 0.3125rem;
+border: 1px solid #84AC48;
+background: #F5F5F5;
+flex: 1;
+
+    font-size: 16px;
+    margin-right: 10px;
+
+}
+button {
+    font-size: 16px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 0.50rem 1.65rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    flex-grow: 1;
+}
+
+li {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+.task-details {
+    display: flex; /* Gør opgavebeskrivelsen til flexbox */
+    flex-direction: column; /* Arranger i kolonne */
+}
+
+li button {
+    margin-left: 10px;
+    background-color: #D2CD64;
+    border-radius: 0.3125rem;
+
+    color: black;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #BFE9BC;
+}
+li button.undo {
+    background-image: url('Component\ 1.svg'); 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    border-radius: 50%; 
+    width: 30px; 
+    height: 30px; 
+    cursor: pointer;
+    padding: 0; 
+}
+li button.complete:hover {
+    background-image: url(Component\ 3.svg);
+    background-size: cover;
+}
+li button.complete {
+    background-color: #F5F5F5; 
+    border-radius: 50%;
+    border: 2px solid #83AD48; 
+    width: 30px; 
+    padding:  10px;
+    height: 30px;
+    cursor: pointer;
+
+}
